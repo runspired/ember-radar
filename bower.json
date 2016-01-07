@@ -11,7 +11,8 @@
     "loader.js": "3.5.0"
   },
   "devDependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "gsap": "~1.18.2"
   },
   "resolutions": {
     "ember": "2.3.0"
