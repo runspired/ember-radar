@@ -2,7 +2,6 @@ import Ember from 'ember';
 import Satellite from './satellite';
 import Geography from './geography';
 import TweenLite from 'tweenlite';
-import jQuery from 'jquery';
 import Container from './container';
 
 const {
@@ -36,7 +35,7 @@ export default class Radar {
     this.sky = state.sky;
 
     this.planet = this.telescope ? new Geography(this.telescope) : null;
-    this.scrollContainer = this.telescope === window ? new Container() : this.telescope;
+    this.scrollContainer = this.telescope === window ? Container : this.telescope;
     this.skyline = this.sky ? new Geography(this.sky) : null;
 
     this.scrollX = this.scrollContainer ? this.scrollContainer.scrollLeft : 0;
