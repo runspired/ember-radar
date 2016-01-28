@@ -1,5 +1,5 @@
 module.exports = {
-  description: 'Install ember-run-raf',
+  description: 'Installs ember-run-raf',
 
   normalizeEntityName: function() {},
 

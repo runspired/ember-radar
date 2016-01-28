@@ -1,7 +1,9 @@
 bower_components/
+node_modules/
 tests/
 tmp/
 dist/
+.idea
 
 .bowerrc
 .editorconfig
