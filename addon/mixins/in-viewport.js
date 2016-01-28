@@ -19,11 +19,6 @@ export default Mixin.create({
   willDestroyElement() {
     this._super(...arguments);
     this.get('inViewport').unregister(this);
-  },
-
-  willDestroy() {
-    this._super(...arguments);
-    this.get('inViewport').unregister(this);
   }
 
 });

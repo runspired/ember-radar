@@ -8,11 +8,13 @@
  * They also implement different standards for how to
  * access the scroll position.
  *
- * This class provides a cross-browser way to access
- * the scrollTop and scrollLeft properties.
+ * This singleton class provides a cross-browser way
+ * to access and set the scrollTop and scrollLeft properties.
  *
+ * This class should potentially handle geography and
+ * scroll handlers as well.
  */
-export default function Container() {
+function Container() {
   Object.defineProperty(this, 'scrollTop', {
     get: function() {
       return window.scrollY ||
@@ -42,3 +44,5 @@ export default function Container() {
     }
   });
 }
+
+export default new Container();
