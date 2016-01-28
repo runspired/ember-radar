@@ -1,78 +1,62 @@
 {
-  "name": "smoke-and-mirrors",
+  "name": "ember-radar",
   "version": "0.4.7",
-  "description": "Ambitious infinite-scroll and svelte rendering for ambitious applications.",
+  "description": "Scroll, position, and in-Viewport tracking of any number of elements or virtual elements at > 60fps",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
-    "build": "ember build",
-    "suave": "jscs addon app tests --fix",
-    "test": "ember try:testall"
+    "suave": "jscs addon app tests --fix"
   },
-  "repository": "https://github.com/runspired/smoke-and-mirrors.git",
+  "repository": "https://github.com/runspired/ember-radar.git",
   "engines": {
     "node": ">= 4.1.1"
   },
-  "ghooks": {
-    "pre-commit": "npm run suave",
-    "pre-push": "npm run suave"
-  },
-  "homepage": "https://runspired.github.io/smoke-and-mirrors",
-  "bugs": "https://github.com/runspired/smoke-and-mirrors/issues",
-  "author": {
-    "name": "Chris Thoburn (@runspired)",
-    "url": "http://runspired.com"
-  },
+  "author": "Chris Thoburn (@runspired)",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.2.0",
+    "broccoli-asset-rev": "^2.4.1",
+    "ember-browsery-stats": "^0.1.1",
     "ember-cli": "2.3.0-beta.1",
-    "ember-cli-app-version": "^1.0.0",
     "ember-cli-changelog": "0.3.4",
     "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-dom-stats": "1.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
-    "ember-cli-inject-live-reload": "^1.3.1",
+    "ember-cli-inject-live-reload": "1.4.0",
     "ember-cli-qunit": "1.2.1",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^2.0.0",
     "ember-cli-toolbelts": "^0.3.3",
     "ember-cli-uglify": "^1.2.0",
-    "ember-code-snippet": "^1.1.0",
-    "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-disable-proxy-controllers": "^1.0.1",
-    "ember-export-application-global": "^1.0.4",
-    "ember-resolver": "2.0.3",
-    "ember-tweenlite": "0.1.0",
-    "ember-run-raf": "^1.0.5",
-    "ember-suave": "1.2.3",
-    "ember-try": "~0.0.8",
-    "ghooks": "^1.0.0",
-    "jscs": "2.7.0"
+    "ember-code-snippet": "1.1.3",
+    "ember-perf": "0.0.12",
+    "ember-resolver": "^2.0.3",
+    "ember-suave": "^1.2.3",
+    "ember-try": "0.0.8",
+    "ghooks": "^1.0.3",
+    "jscs": "^2.8.0",
+    "ember-run-raf": "1.0.6"
   },
   "keywords": [
-    "occlusion",
-    "infinite",
-    "infinite-scroll",
-    "collection",
-    "svelte",
-    "grid",
-    "list-view",
-    "recycling",
-    "cloaking",
-    "performance",
-    "lists",
-    "ember-addon"
+    "ember-addon",
+    "radar",
+    "scroll",
+    "viewport",
+    "position",
+    "track",
+    "parallax"
   ],
   "dependencies": {
-    "ember-cli-htmlbars": "^1.0.1",
-    "ember-async-image": "0.0.1",
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^5.1.5",
+    "ember-cli-htmlbars": "1.0.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "ghooks": {
+    "pre-commit": "npm run suave",
+    "pre-push": "npm run suave"
   }
 }
