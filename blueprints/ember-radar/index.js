@@ -4,6 +4,10 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function() {
-    return this.addAddonToProject('ember-run-raf', '^1.0.5');
+    return this.addAddonsToProject(
+      [
+        { name: 'ember-run-raf', version: '^1.0.5' },
+        { name: 'ember-tweenlite', version: '^1.0.1' }
+      ]);
   }
 };
